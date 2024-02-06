@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="196dp"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:background="@drawable/background3">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        app:cardCornerRadius="55dp"
+        app:cardBackgroundColor="@color/white">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:id="@+id/navImage"
+            android:src="@drawable/county"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/navName"
+        android:textSize="19sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Samuel Shadiva"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/navEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:text="Whatever@gmail.com" />
+</LinearLayout>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employees.Profile"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp">
+
+            </TextView>
+
+
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_gravity="center"
+                app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="13dp"
+            android:layout_marginStart="17dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textSize="20sp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="18dp">
+
+            </TextView>
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+            <!-- First Column -->
+
+
+
+            <TextView
+                android:id="@+id/Id_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:text="ID No:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_row="7"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:text="Gender:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:id="@+id/g_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <!-- Second Column -->
+            <TextView
+                android:id="@+id/labelLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frichester Maluu"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="frinchestere@example.com"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/userMobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile no.:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/Mobile_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0712345678"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+
+            <TextView
+                android:id="@+id/labelDateOfBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D.O.B:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+            <TextView
+                android:id="@+id/userDateOfBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="January 1, 1990"
+                android:textSize="16sp"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+
+
+
+            </GridLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:elevation="30dp"
+            app:cardCornerRadius="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Information"
+                android:textSize="20sp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="18dp">
+            </TextView>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/labelName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public service no:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/userPublic_service_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123456780"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:text="Department:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:id="@+id/department_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Roads"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/DOH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_marginLeft="8dp"
+                    android:text="D.O.H:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:id="@+id/DOHtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123456"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:text="Position:"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:id="@+id/p_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="driver"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+                <TextView
+                    android:id="@+id/roleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/date_created_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Created:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_column="0"
+                    android:layout_row="7"
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/date_created"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01-08-2008"
+                    android:textSize="16sp"
+                    android:layout_column="1"
+                    android:layout_row="7"
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"/>
+
+
+            </GridLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <!-- Add other profile details as needed -->
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Edit Profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="7dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:shadowRadius="10"
+            android:background="@drawable/button_rounded_bg"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="Delete Profile"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="7dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:shadowRadius="10"
+            android:background="@drawable/button_rounded_bg"/>
+
+        
+    </LinearLayout>
+
+
+    </ScrollView>

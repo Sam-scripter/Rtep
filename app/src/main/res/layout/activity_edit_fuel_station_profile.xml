@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fuel_Stations.edit_fuel_station_profile">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="Edit Station"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="14dp">
+
+            </TextView>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="17"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Station Id">
+
+                    </TextView>
+                    <EditText
+                        android:id="@+id/edit_station_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="Station Id"
+                        android:inputType="number">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="station location">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/edit_station_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="station_location"
+                        android:inputType="text">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="description">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="description"
+                        android:inputType="text">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a rations diesel">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_a_rations_diesel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="a rations diesel"
+                        android:inputType="text">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="a rations unit price">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_a_rations_unit_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="a rations unit price"
+                        android:inputType="text">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b rations petrol">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_b_rations_petrol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="b_rations_petrol"
+                        android:inputType="text">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="b_rations_unit_price">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/b_rations_unit_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="b_rations_unit_price"
+                        android:inputType="number">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total fuel litres">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_total_fuel_litres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="Total fuel litres"
+                        android:inputType="number">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oil litres">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_oil_litres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="Oil litres"
+                        android:inputType="number">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Otometer reading(by officer)">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_otometer_reading_officer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="Otometer reading by officer"
+                        android:inputType="text">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date created">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_date_created"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="date posted"
+                        android:inputType="date">
+
+                    </EditText>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="-9dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="7dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date updated">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/station_date_updated"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:hint="date updated"
+                        android:inputType="date">
+
+                    </EditText>
+
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </GridLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="Update Station"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:background="@drawable/button_rounded_bg"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="48dp"
+                android:padding="-20dp"
+                android:shadowRadius="10">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+

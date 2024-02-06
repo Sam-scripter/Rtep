@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rtep2"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".repair_orders_reports"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".detail_orders_reports"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".make_repair_order"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".make_fuel_order"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendors.vendors"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Repair_orders.repair_orders"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Repair_orders.edit_repair_order_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Repair_orders.repair_order_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Repair_orders.RepairOrderAdapter"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".VehicleRefillReports.edit_vehicle_refill_reports_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".VehicleRefillReports.vehicle_refill_reports_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".VehicleRefillReports.Vehicle_refill_reports_Adapter"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".VehicleRefillReports.vehicle_refill_reports"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendor_Supply_Reports.edit_vendor_supply_report_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendor_Supply_Reports.vendor_supply_report_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendor_Supply_Reports.Vendor_supply_reports_Adapter"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendor_Supply_Reports.vendor_supply_reports"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Detail_orders.edit_detail_order_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Detail_orders.DetailOrderAdapter"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Detail_orders.detail_order_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Detail_orders.detail_orders"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendors.edit_vendor_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendors.vendor_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vendors.VendorAdapter"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Fuel_Stations.edit_fuel_station_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Fuel_Stations.fuel_station_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Fuel_Stations.fuel_stations_adapter"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Fuel_Stations.fuel_stations"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Test.UploadActivityTest"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Test.Test"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vehicles.edit_vehicle_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Departments.department_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Departments.DepartmentAdapter"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Departments.departments"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Departments.edit_department_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Overview"
+            android:exported="false"
+            android:theme="@style/overview">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vehicles.vehicle_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Employees.edit_profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:theme="@style/activity"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Vehicles.vehicles"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sign_in_up.register_department"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sign_in_up.register_vehicle"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".user_fragment_roles.adminFragment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".user_fragment_roles.driverFragment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".user_fragment_roles.RepairFragment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".user_fragment_roles.superUserFragment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".user_fragment_roles.TransportFragment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Employees.Profile"
+            android:exported="false"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Employees.employees"
+            android:exported="false"
+            android:label="Employees"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Retrofit.RetrofitActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sign_in_up.login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sign_in_up.register"
+            android:exported="false"
+            android:parentActivityName=".Employees.employees"
+            android:theme="@style/activity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

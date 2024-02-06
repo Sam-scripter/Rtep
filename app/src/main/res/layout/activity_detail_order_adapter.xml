@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Detail_orders.DetailOrderAdapter">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/detail_order_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:id="@+id/detail_rations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rations fuel or diesel"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:textSize="17sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/detail_vehicle_Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Id"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="11dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="88dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="13dp"
+                app:cardCornerRadius="10dp">
+
+                <TextView
+                    android:id="@+id/DetailOrder_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center">
+
+                </TextView>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
